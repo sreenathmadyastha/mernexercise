@@ -5,10 +5,10 @@ export default class CreateExercise extends Component {
     constructor(props) {
         super(props);
         this.onChangeUsername = this.onChangeUsername.bind(this);
-        this.onChangeDescription = this.onChangeDescription.bind(this);
-        this.onChangeDuration = this.onChangeDuration.bind(this);
-        this.onChangeDate = this.onChangeDate.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
+        // this.onChangeDescription = this.onChangeDescription.bind(this);
+        // this.onChangeDuration = this.onChangeDuration.bind(this);
+        // this.onChangeDate = this.onChangeDate.bind(this);
+        // this.onSubmit = this.onSubmit.bind(this);
 
 
         this.state = {
@@ -16,12 +16,13 @@ export default class CreateExercise extends Component {
             description : '',
             duration : 0
         };
+    }
 
-        // onChangeUsername(e) {
-        //     this.setState({
-        //         username:e.target.value
-        //     });
-        // }
+        onChangeUsername(e) {
+            this.setState({
+                username:e.target.value
+            });
+        }
         // onChangeDescription(e) {
         //     this.setState({
         //         description:e.target.value
@@ -49,15 +50,12 @@ export default class CreateExercise extends Component {
         //     window.location = '/';
         // }
     
-        // render() {
-        //     return (
-        //         <div>
-        //             <p>You are on the Create Exercise </p>
-        //         </div>
-        //     )
-        // }
+        render() {
+            return (
+                <div>
+                    <p>you are on the create exercise </p>
+                </div>
+            );
+        }
 
-
-    
-}
 }
